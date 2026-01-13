@@ -1,0 +1,83 @@
+/* 整个页面 */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f2f4f8;
+  font-family: Arial, sans-serif;
+
+  /* 关键：让卡片居中 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 白色卡片 */
+.card {
+  background: white;
+  width: 360px;
+  padding: 24px;
+
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  text-align: center;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+
+}
+
+/* 图片 */
+.card img {
+  width: 200px;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+
+/* 标题 */
+.card h1 {
+  margin-top: 0;
+  color: #e76f0cc2;
+  font-family: fantasy;
+}
+
+.card h2 {
+  color: #34495e;
+}
+
+/* 文字 */
+.card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card a {
+  color: #1154aa;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+button {
+  margin-top: 16px;
+  padding: 10px 18px;
+  font-size: 16px;
+
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1558b0;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>我的第一个网页</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+  <div class="card">
+    <h1>Fatt Jia Kopitiam</h1>
+
+    <button id="changeBtn">点击领取免费泰茶一杯🙂</button>
+
+<p id="message">赶快来领取 😞</p>
+
+
+    <p>
+      想要喝到马六甲最棒的茶请找我。想了解更多可以去
+      <a href="https://www.instagram.com/fattjia_kopitiam/" target="_blank">@FattJiaKopitiam</a>。
+    </p>
+
+
+    <img id="avatar" src="images/photo_2026-01-13_16-02-18.jpg">
+  </div>
+  <script>
+   const btn = document.getElementById("changeBtn");
+  const msg = document.getElementById("message");
+  const img = document.getElementById("avatar");
+
+  let clicked = false;
+
+  // ✅ 把这里两行路径改成你自己的两张图片文件名
+  const img1 = "images/photo_2026-01-13_16-02-18.jpg";
+  const img2 = "images/photo_2026-01-13_16-04-21.jpg";
+
+  btn.onclick = function () {
+    if (clicked) {
+      msg.textContent = " 🙂🍵";
+      btn.textContent = "已领取一杯美味泰茶";
+      img.src = img1;
+    } else {
+      msg.textContent = "您无法再次领取哦！🎉";
+      btn.textContent = "已领取一杯美味泰茶";
+      img.src = img2;
+    }
+
+    clicked = !clicked; // 状态取反
+  };
+</script>
+
+</body>
+</html>
